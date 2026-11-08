@@ -1,0 +1,131 @@
+{
+  "site": "https://pelusa.app",
+  "version": "2.4",
+  "updated": "2026-11-04",
+  "stores": {
+    "ios": "",
+    "android": "",
+    "iosProviderToken": ""
+  },
+  "social": {
+        "instagram": "https://www.instagram.com/sorlovfit/",
+        "tiktok": "https://www.tiktok.com/@sorlovfit",
+        "youtube": "https://www.youtube.com/@sorlovfit"
+    },
+  "freedGb": null,
+  "appLanguages": [
+    "en",
+    "ru",
+    "es",
+    "es-419",
+    "de",
+    "fr",
+    "fr-CA",
+    "it",
+    "pt-BR",
+    "pt-PT",
+    "ja"
+  ],
+  "locales": [
+    {
+      "code": "en",
+      "hreflang": "en",
+      "path": "/",
+      "name": "English",
+      "og": "en_US"
+    },
+    {
+      "code": "es",
+      "hreflang": "es",
+      "path": "/es/",
+      "name": "Español (España)",
+      "og": "es_ES"
+    },
+    {
+      "code": "es-419",
+      "hreflang": "es-419",
+      "path": "/es-419/",
+      "name": "Español (Latinoamérica)",
+      "og": "es_LA",
+      "hreflangAlso": [
+        "es-AR",
+        "es-MX",
+        "es-CO",
+        "es-CL",
+        "es-PE",
+        "es-VE",
+        "es-EC",
+        "es-GT",
+        "es-CU",
+        "es-BO",
+        "es-DO",
+        "es-HN",
+        "es-PY",
+        "es-SV",
+        "es-NI",
+        "es-CR",
+        "es-PA",
+        "es-UY",
+        "es-PR",
+        "es-US"
+      ],
+      "short": "ES-LA"
+    },
+    {
+      "code": "ru",
+      "hreflang": "ru",
+      "path": "/ru/",
+      "name": "Русский",
+      "og": "ru_RU"
+    },
+    {
+      "code": "de",
+      "hreflang": "de",
+      "path": "/de/",
+      "name": "Deutsch",
+      "og": "de_DE"
+    },
+    {
+      "code": "fr",
+      "hreflang": "fr",
+      "path": "/fr/",
+      "name": "Français",
+      "og": "fr_FR"
+    },
+    {
+      "code": "fr-CA",
+      "hreflang": "fr-CA",
+      "path": "/fr-ca/",
+      "name": "Français (Canada)",
+      "og": "fr_CA"
+    },
+    {
+      "code": "it",
+      "hreflang": "it",
+      "path": "/it/",
+      "name": "Italiano",
+      "og": "it_IT"
+    },
+    {
+      "code": "pt-BR",
+      "hreflang": "pt-BR",
+      "path": "/pt-br/",
+      "name": "Português (Brasil)",
+      "og": "pt_BR"
+    },
+    {
+      "code": "pt-PT",
+      "hreflang": "pt-PT",
+      "path": "/pt-pt/",
+      "name": "Português (Portugal)",
+      "og": "pt_PT"
+    },
+    {
+      "code": "ja",
+      "hreflang": "ja",
+      "path": "/ja/",
+      "name": "日本語",
+      "og": "ja_JP"
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="{{{lang}}}">
+<head>
+{{>head}}
+</head>
+<body class="plat-desktop">
+{{>header}}
+    <div class="lang-offer" id="langOffer" hidden></div>
+
+    <main id="main">
+        <!-- Первый экран -->
+        <section class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="pill">{{{ico:lock-fill:pill-icon}}}<span>{{pill}}</span></div>
+                    <h1>{{h1}}</h1>
+                    <p class="hero-sub">{{sub}}</p>
+{{{stores:hero}}}
+                    <p class="platforms">{{{platforms}}}</p>
+                </div>
+
+                <!-- V1: живой прототип ролика, потом сюда встанет видео -->
+                <div class="hero-phone-col">
+                    <div class="hero-disc" aria-hidden="true"></div>
+                    <div class="hero-phone-wrap{{{hero_video}}}">
+                        <div class="phone hero-phone" id="heroPhone">
+                            <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true" data-media="v1"{{{media:v1}}}></video>
+                            <div class="feed" id="heroFeed" aria-hidden="true"></div>
+                            <div class="statusbar" aria-hidden="true"><span>9:41</span>{{{ico:signal_cellular_4_bar}}}</div>
+                            <button type="button" class="sound-toggle" id="soundToggle">
+                                {{{ico:volume_up-fill:ic-on}}}{{{ico:volume_off:ic-off}}}<span id="soundLabel">{{snd_off}}</span>
+                            </button>
+                            <div class="feed-fade" aria-hidden="true"></div>
+                            <div class="plate" aria-hidden="true"></div>
+                            <div class="plate-row" aria-hidden="true">
+                                <div class="bk bk-jar" id="heroJar"><img src="/images/buckets/jar.svg" alt=""><span class="bk-count" id="heroJarCount" hidden>5</span></div>
+                                <div class="bk bk-box"><img src="/images/buckets/box.svg" alt=""></div>
+                                <div class="bk bk-bin"><img src="/images/buckets/bin.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="freed" aria-hidden="true"><span>{{freed}}</span><b id="heroFreed">{{{freed_start}}}</b></div>
+                        <img class="hero-mascot" src="/images/mascot-happy.svg" alt="" width="130" height="130">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контраст с рилсами -->
+        <section class="section">
+            <div class="contrast">
+                <div class="contrast-item contrast-reels">
+                    {{{ico:smart_display}}}
+                    <p>{{c1}}</p>
+                </div>
+                <div class="contrast-item contrast-pelusa">
+                    {{{ico:favorite-fill}}}
+                    <p>{{{contrast2}}}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Как это работает -->
+        <section class="section" id="how">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">{{how_k}}</p>
+                    <h2>{{how_t}}</h2>
+                </div>
+                <div class="steps">
+                    <article class="step step-1">
+                        <div class="step-head"><span class="step-n">1</span><h3>{{s1_t}}</h3></div>
+                        <p>{{s1_p}}</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="{{{poster:feed}}}" data-media="v2"{{{media:v2}}}></video>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="step step-2">
+                        <div class="step-head"><span class="step-n">2</span><h3>{{s2_t}}</h3></div>
+                        <p>{{s2_p}}</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone step-phone-low">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="{{{poster:drag}}}" data-media="v3"{{{media:v3}}}></video>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="step step-3">
+                        <div class="step-head"><span class="step-n">3</span><h3>{{s3_t}}</h3></div>
+                        <p>{{s3_p}}</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="{{{poster:bucket}}}" data-media="v4"{{{media:v4}}}></video>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ностальгия -->
+        <section class="section">
+            <div class="wrap split{{{nos_video}}}">
+                <div class="split-text">
+                    <p class="kicker">{{nos_k}}</p>
+                    <h2>{{nos_t}}</h2>
+                    <p class="lead">{{nos_p}}</p>
+                </div>
+                <div class="years card">
+                    <div class="chips">
+                        <span class="chip chip-on">{{{ico:swap_vert}}}<span>{{nos_c1}}</span></span>
+                        <span class="chip">{{{ico:filter_alt}}}<span>{{nos_c2}}</span></span>
+                        <span class="chip">{{{ico:filter_alt}}}<span>{{nos_c3}}</span></span>
+                        <span class="chip chip-on">{{{ico:filter_alt}}}<span>{{nos_c4}}</span></span>
+                    </div>
+                    <div class="year"><div class="year-label"><b>2016</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p13.webp" alt="" loading="lazy"><img src="/images/photos/p02.webp" alt="" loading="lazy"><img src="/images/photos/p09.webp" alt="" loading="lazy"></div></div>
+                    <div class="year"><div class="year-label"><b>2017</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p11.webp" alt="" loading="lazy"><img src="/images/photos/p04.webp" alt="" loading="lazy"><img src="/images/photos/p16.webp" alt="" loading="lazy"></div></div>
+                    <div class="year"><div class="year-label"><b>2018</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p14.webp" alt="" loading="lazy"><img src="/images/photos/p10.webp" alt="" loading="lazy"><img src="/images/photos/p06.webp" alt="" loading="lazy"></div></div>
+                </div>
+                <!-- Если есть ролик V7, он встает вместо карточки с годами -->
+                <div class="nos-visual">
+                    <div class="phone nos-phone">
+                        <video muted loop playsinline preload="none" aria-hidden="true" data-media="v7"{{{media:v7}}}></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Звук и отдача в руке -->
+        <section class="section" id="sound">
+            <div class="sound-box">
+                <div class="split-text">
+                    <p class="kicker kicker-light">{{snd_k}}</p>
+                    <h2>{{snd_t}}</h2>
+                    <p class="lead">{{snd_p}}</p>
+                    <ul class="chips chips-dark">
+                        <li class="chip">{{{ico:graphic_eq}}}<span>{{snd_c1}}</span></li>
+                        <li class="chip">{{{ico:vibration}}}<span>{{snd_c2}}</span></li>
+                        <li class="chip">{{{ico:volume_off}}}<span>{{snd_c3}}</span></li>
+                        <li class="chip">{{{ico:motion_photos_off}}}<span>{{snd_c4}}</span></li>
+                    </ul>
+                </div>
+                <div class="sound-pad">
+                    <div class="tap-hint">{{{ico:touch_app}}}<span>{{tap_hint}}</span></div>
+                    <div class="sound-row">
+                        <button type="button" class="sound-btn" data-sound="jar"><span class="bk bk-dark bk-jar-d"><img src="/images/buckets/jar-dark.svg" alt=""></span><span>{{cn_jar}}</span></button>
+                        <button type="button" class="sound-btn" data-sound="box"><span class="bk bk-dark bk-box-d"><img src="/images/buckets/box-dark.svg" alt=""></span><span>{{cn_box}}</span></button>
+                        <button type="button" class="sound-btn" data-sound="bin"><span class="bk bk-dark bk-bin-d"><img src="/images/buckets/bin-dark.svg" alt=""></span><span>{{cn_bin}}</span></button>
+                        <button type="button" class="sound-btn" data-sound="bag"><span class="bk bk-dark bk-bag-d"><img src="/images/buckets/bag-dark.svg" alt=""></span><span>{{cn_bag}}</span></button>
+                        <button type="button" class="sound-btn" data-sound="crate"><span class="bk bk-dark bk-tub-d"><img src="/images/buckets/tub-dark.svg" alt=""></span><span>{{cn_tub}}</span></button>
+                    </div>
+                    <p class="pad-note">{{pad_note}}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Результат -->
+        <section class="section">
+            <div class="wrap split split-result">
+                <div class="result-visual">
+                    <div class="result-ring" aria-hidden="true"></div>
+                    <div class="phone result-phone">
+                        <video muted playsinline preload="none" aria-hidden="true" data-poster="{{{poster:result}}}" data-media="v6"{{{media:v6}}}></video>
+                    </div>
+                </div>
+                <div class="split-text">
+                    <p class="kicker">{{res_k}}</p>
+                    <h2>{{res_t}}</h2>
+                    <p class="lead">{{res_p}}</p>
+                    <div class="trash card">
+                        <p class="trash-main">{{{ico:restore_from_trash}}}<span>{{trash}}</span></p>
+                        <p class="trash-line only-not-ios">{{tr_android}}</p>
+                        <p class="trash-line only-not-android">{{tr_ios}}</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat card"><b>0</b><span>{{st1}}</span></div>
+                        <div class="stat card"><b>0</b><span>{{st2}}</span></div>
+                        <div class="stat card"><b>{{{ico:front_hand-fill}}}</b><span>{{st3}}</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Приватность -->
+        <section class="section" id="privacy">
+            <div class="wrap">
+                <div class="section-head section-head-row">
+                    <div>
+                        <p class="kicker">{{prv_k}}</p>
+                        <h2>{{prv_t}}</h2>
+                    </div>
+                    <img class="mascot-side" src="/images/mascot-content.svg" alt="" width="110" height="110" loading="lazy">
+                </div>
+                <ul class="chips privacy-chips">
+                    <li class="chip">{{{ico:photo_library}}}<span>{{prv_c1}}</span></li>
+                    <li class="chip">{{{ico:person_off}}}<span>{{prv_c2}}</span></li>
+                    <li class="chip">{{{ico:airplanemode_active}}}<span>{{prv_c3}}</span></li>
+                </ul>
+                <div class="privacy-grid">
+                    <article class="privacy-card card">
+                        <span class="tile tile-1">{{{ico:smartphone}}}</span>
+                        <h3>{{prv1_t}}</h3>
+                        <p>{{prv1_p}}</p>
+                    </article>
+                    <article class="privacy-card card">
+                        <span class="tile tile-2">{{{ico:front_hand}}}</span>
+                        <h3>{{prv2_t}}</h3>
+                        <p>{{prv2_p}}</p>
+                    </article>
+                    <article class="privacy-card card">
+                        <span class="tile tile-3">{{{ico:monitoring}}}</span>
+                        <h3>{{prv3_t}}</h3>
+                        <p>{{prv3_p}}</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Об авторе -->
+        <section class="section">
+            <div class="author">
+                <div class="author-photo">
+                    <img src="/images/author.webp" alt="" width="960" height="1280" loading="lazy">
+                </div>
+                <div class="author-text">
+                    <h2>{{ab_t}}</h2>
+                    <p class="author-p1">{{ab_p1}}</p>
+                    <p>{{ab_p2}}</p>
+{{{socials}}}
+                </div>
+            </div>
+        </section>
+
+        <!-- Бесплатна целиком -->
+        <section class="section">
+            <div class="free-box">
+                <div>
+                    <h2>{{fr_t}}</h2>
+                    <p class="free-p1">{{fr_p1}}</p>
+                    <p>{{fr_p2}}</p>
+                </div>
+                <div class="supporter card">
+                    <img src="/images/mascot-happy.svg" alt="" width="130" height="130" loading="lazy">
+                    <div>
+                        <span class="supporter-where">{{in_settings}}</span>
+                        <span class="supporter-badge">{{{ico:favorite-fill}}}<span>{{badge}}</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="faq-wrap">
+                <h2>{{faq_t}}</h2>
+                <div class="faq">
+{{{faq}}}
+                </div>
+            </div>
+        </section>
+
+        <!-- Финальный призыв -->
+        <section class="section" id="download">
+            <div class="final">
+                <img class="final-icon" src="/images/icons/icon-512.webp" alt="" width="170" height="170" loading="lazy">
+                <h2>{{final}}</h2>
+{{{stores:final}}}
+            </div>
+        </section>
+    </main>
+
+{{>footer}}
+{{{page_data}}}
+    <script src="/script.js?v={{{version}}}"></script>
+</body>
+</html>

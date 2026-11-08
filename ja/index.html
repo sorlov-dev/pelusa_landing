@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelusa｜写真ギャラリーを整理して空き容量を増やす</title>
+    <meta name="description" content="フィードを眺めるようにギャラリーを整理。スクリーンショットやレシートは瓶へ。写真はスマートフォンの外に出ません。無料、広告なし。">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pelusa.app/ja/">
+    <link rel="alternate" hreflang="en" href="https://pelusa.app/">
+    <link rel="alternate" hreflang="es" href="https://pelusa.app/es/">
+    <link rel="alternate" hreflang="es-419" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-AR" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-MX" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CO" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CL" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PE" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-VE" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-EC" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-GT" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CU" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-BO" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-DO" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-HN" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PY" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-SV" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-NI" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CR" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PA" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-UY" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PR" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-US" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="ru" href="https://pelusa.app/ru/">
+    <link rel="alternate" hreflang="de" href="https://pelusa.app/de/">
+    <link rel="alternate" hreflang="fr" href="https://pelusa.app/fr/">
+    <link rel="alternate" hreflang="fr-CA" href="https://pelusa.app/fr-ca/">
+    <link rel="alternate" hreflang="it" href="https://pelusa.app/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://pelusa.app/pt-br/">
+    <link rel="alternate" hreflang="pt-PT" href="https://pelusa.app/pt-pt/">
+    <link rel="alternate" hreflang="ja" href="https://pelusa.app/ja/">
+    <link rel="alternate" hreflang="x-default" href="https://pelusa.app/">
+    <meta name="theme-color" content="#F4ECE1">
+    <link rel="icon" type="image/svg+xml" href="/images/icons/favicon.svg?v=e2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32.png?v=e2">
+    <link rel="apple-touch-icon" href="/images/icons/icon-180.png?v=e">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pelusa">
+    <meta property="og:url" content="https://pelusa.app/ja/">
+    <meta property="og:title" content="Pelusa｜写真ギャラリーを整理して空き容量を増やす">
+    <meta property="og:description" content="フィードのようで、主役は自分の思い出。無料、広告なし、写真はスマートフォンの外に出ません。">
+    <meta property="og:image" content="https://pelusa.app/images/og/og-en.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="es_LA">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="fr_CA">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/style.css?v=2.4">
+
+</head>
+<body class="plat-desktop">
+    <a class="skip-link" href="#main">本文へスキップ</a>
+    <header class="site-header">
+        <div class="header-bar">
+            <a href="/ja/" class="logo" aria-label="Pelusa">
+                <img src="/images/icons/icon-72.png" alt="" width="34" height="34">
+                <span>Pelusa</span>
+            </a>
+            <nav class="header-nav" aria-label="セクション">
+                <a href="#how">使い方</a>
+                <a href="#sound">サウンド</a>
+                <a href="#privacy">プライバシー</a>
+                <a href="#faq">よくある質問</a>
+            </nav>
+            <details class="lang-menu">
+                <summary aria-label="言語: 日本語"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#language"></use></svg><span>JA</span><svg class="ic ic-caret" aria-hidden="true" focusable="false"><use href="/images/icons.svg#expand_more"></use></svg></summary>
+                <ul><li><a href="/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es">Español (España)</a></li><li><a href="/es-419/" hreflang="es-419" lang="es-419" data-lang="es-419">Español (Latinoamérica)</a></li><li><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/fr-ca/" hreflang="fr-CA" lang="fr-CA" data-lang="fr-CA">Français (Canada)</a></li><li><a href="/it/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT" data-lang="pt-PT">Português (Portugal)</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja" aria-current="page">日本語</a></li></ul>
+            </details>
+            <a href="#download" class="header-download" data-download>
+                <svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#download"></use></svg><span>ダウンロード</span>
+            </a>
+        </div>
+    </header>
+    <div class="lang-offer" id="langOffer" hidden></div>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="pill"><svg class="ic pill-icon" aria-hidden="true" focusable="false"><use href="/images/icons.svg#lock-fill"></use></svg><span>無料・広告なし・写真はスマートフォンの外に出ません</span></div>
+                    <h1>思い出をスクロール。ストレージはすっきり。</h1>
+                    <p class="hero-sub">ほかのフィードと同じように夢中になれるのに、並ぶのは自分の写真で、しかもちゃんと役に立ちます。スクリーンショットやブレた写真、重複した写真を入れ物に入れて削除し、空き容量を増やしましょう。</p>
+                    <div class="stores" id="get">
+<a class="badge badge-ios" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#apple"></use></svg><span class="badge-text"><b>App Store</b><small>からダウンロード</small></span></a>
+<a class="badge badge-gp" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#google-play"></use></svg><span class="badge-text"><b>Google Play</b><small>で手に入れよう</small></span></a><div class="qr"><img src="/images/qr-get.svg" alt="QRコード：pelusa.app/get" width="50" height="50"><span>スマートフォンのカメラを向けると、対応するストアが開きます</span></div>
+                    </div>
+                    <p class="platforms">iPhone（iOS 26以降）・Android 11以降・8言語</p>
+                </div>
+
+                <div class="hero-phone-col">
+                    <div class="hero-disc" aria-hidden="true"></div>
+                    <div class="hero-phone-wrap has-video">
+                        <div class="phone hero-phone" id="heroPhone">
+                            <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true" data-media="v1" poster="/media/v1-ios-en.webp" data-sources='{"ios":{"mp4":"/media/v1-ios-en.mp4","webm":"/media/v1-ios-en.webm","poster":"/media/v1-ios-en.webp"}}'></video>
+                            <div class="feed" id="heroFeed" aria-hidden="true"></div>
+                            <div class="statusbar" aria-hidden="true"><span>9:41</span><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#signal_cellular_4_bar"></use></svg></div>
+                            <button type="button" class="sound-toggle" id="soundToggle">
+                                <svg class="ic ic-on" aria-hidden="true" focusable="false"><use href="/images/icons.svg#volume_up-fill"></use></svg><svg class="ic ic-off" aria-hidden="true" focusable="false"><use href="/images/icons.svg#volume_off"></use></svg><span id="soundLabel">サウンドをオン</span>
+                            </button>
+                            <div class="feed-fade" aria-hidden="true"></div>
+                            <div class="plate" aria-hidden="true"></div>
+                            <div class="plate-row" aria-hidden="true">
+                                <div class="bk bk-jar" id="heroJar"><img src="/images/buckets/jar.svg" alt=""><span class="bk-count" id="heroJarCount" hidden>5</span></div>
+                                <div class="bk bk-box"><img src="/images/buckets/box.svg" alt=""></div>
+                                <div class="bk bk-bin"><img src="/images/buckets/bin.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="freed" aria-hidden="true"><span>保留中</span><b id="heroFreed">312 MB</b></div>
+                        <img class="hero-mascot" src="/images/mascot-happy.svg" alt="" width="130" height="130">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="contrast">
+                <div class="contrast-item contrast-reels">
+                    <svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#smart_display"></use></svg>
+                    <p>フィードを20分スクロールしても、何も変わりません。</p>
+                </div>
+                <div class="contrast-item contrast-pelusa">
+                    <svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#favorite-fill"></use></svg>
+                    <p>Pelusaで20分なら、スマートフォンの空き容量と、心地よいなつかしさが手に入ります。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="how">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">使い方</p>
+                    <h2>3つの操作で、ストレージにゆとりが生まれます</h2>
+                </div>
+                <div class="steps">
+                    <article class="step step-1">
+                        <div class="step-head"><span class="step-n">1</span><h3>写真を長押し</h3></div>
+                        <p>いらない写真をフィードの中でそのまま長押しして、ほかの写真もタップしてください。まとめてスタックになります。</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="/images/posters/feed.webp" data-media="v2" data-sources='{"ios":{"mp4":"/media/v2-ios-en.mp4","webm":"/media/v2-ios-en.webm","poster":"/media/v2-ios-en.webp"}}'></video>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="step step-2">
+                        <div class="step-head"><span class="step-n">2</span><h3>入れ物に入れる</h3></div>
+                        <p>スタックを瓶、箱、バケツにドラッグします。入れたい入れ物をタップするだけでも大丈夫です。</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone step-phone-low">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="/images/posters/drag.webp" data-media="v3" data-sources='{"ios":{"mp4":"/media/v3-ios-en.mp4","webm":"/media/v3-ios-en.webm","poster":"/media/v3-ios-en.webp"}}'></video>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="step step-3">
+                        <div class="step-head"><span class="step-n">3</span><h3>中を見て削除</h3></div>
+                        <p>入れ物を開いて残す写真をチェックし、「残りを削除」をタップします。削除した写真は、通常30日間復元できます。</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="/images/posters/bucket.webp" data-media="v4" data-sources='{"ios":{"mp4":"/media/v4-ios-en.mp4","webm":"/media/v4-ios-en.webm","poster":"/media/v4-ios-en.webp"}}'></video>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split has-video">
+                <div class="split-text">
+                    <p class="kicker">ノスタルジー</p>
+                    <h2>あの夏、覚えていますか？</h2>
+                    <p class="lead">並べ替えを「古い順」にして、年月をさかのぼってみてください。新しい写真をフィードに出さないようにするには、設定の「表示する写真」を使います。</p>
+                </div>
+                <div class="years card">
+                    <div class="chips">
+                        <span class="chip chip-on"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#swap_vert"></use></svg><span>古い順</span></span>
+                        <span class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#filter_alt"></use></svg><span>1年以上前</span></span>
+                        <span class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#filter_alt"></use></svg><span>2年以上前</span></span>
+                        <span class="chip chip-on"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#filter_alt"></use></svg><span>3年以上前</span></span>
+                    </div>
+                    <div class="year"><div class="year-label"><b>2016</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p13.webp" alt="" loading="lazy"><img src="/images/photos/p02.webp" alt="" loading="lazy"><img src="/images/photos/p09.webp" alt="" loading="lazy"></div></div>
+                    <div class="year"><div class="year-label"><b>2017</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p11.webp" alt="" loading="lazy"><img src="/images/photos/p04.webp" alt="" loading="lazy"><img src="/images/photos/p16.webp" alt="" loading="lazy"></div></div>
+                    <div class="year"><div class="year-label"><b>2018</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p14.webp" alt="" loading="lazy"><img src="/images/photos/p10.webp" alt="" loading="lazy"><img src="/images/photos/p06.webp" alt="" loading="lazy"></div></div>
+                </div>
+                <div class="nos-visual">
+                    <div class="phone nos-phone">
+                        <video muted loop playsinline preload="none" aria-hidden="true" data-media="v7" data-sources='{"ios":{"mp4":"/media/v7-ios-en.mp4","webm":"/media/v7-ios-en.webm","poster":"/media/v7-ios-en.webp"}}'></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="sound">
+            <div class="sound-box">
+                <div class="split-text">
+                    <p class="kicker kicker-light">サウンドと振動</p>
+                    <h2>耳で聞いて、手で感じる</h2>
+                    <p class="lead">入れ物ごとに音が違います。瓶はカランと鳴り、箱はコトンと響き、袋はカサカサと音を立てます。スマートフォンも手のひらにやさしい振動で応えます。音はすべて実際に録音したもので、AI生成は一切使っていません。あるのはパントリーと入れ物と豆だけです。</p>
+                    <ul class="chips chips-dark">
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#graphic_eq"></use></svg><span>入れ物ごとに違う音</span></li>
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#vibration"></use></svg><span>手に伝わるやさしい振動</span></li>
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#volume_off"></use></svg><span>サウンドなしでも使える</span></li>
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#motion_photos_off"></use></svg><span>「動きを減らす」に対応</span></li>
+                    </ul>
+                </div>
+                <div class="sound-pad">
+                    <div class="tap-hint"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#touch_app"></use></svg><span>入れ物をタップ</span></div>
+                    <div class="sound-row">
+                        <button type="button" class="sound-btn" data-sound="jar"><span class="bk bk-dark bk-jar-d"><img src="/images/buckets/jar-dark.svg" alt=""></span><span>瓶</span></button>
+                        <button type="button" class="sound-btn" data-sound="box"><span class="bk bk-dark bk-box-d"><img src="/images/buckets/box-dark.svg" alt=""></span><span>箱</span></button>
+                        <button type="button" class="sound-btn" data-sound="bin"><span class="bk bk-dark bk-bin-d"><img src="/images/buckets/bin-dark.svg" alt=""></span><span>バケツ</span></button>
+                        <button type="button" class="sound-btn" data-sound="bag"><span class="bk bk-dark bk-bag-d"><img src="/images/buckets/bag-dark.svg" alt=""></span><span>袋</span></button>
+                        <button type="button" class="sound-btn" data-sound="crate"><span class="bk bk-dark bk-tub-d"><img src="/images/buckets/tub-dark.svg" alt=""></span><span>ケース</span></button>
+                    </div>
+                    <p class="pad-note">最初は3つ。袋やケースも含めて、いつでも好きなだけ追加できます。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split split-result">
+                <div class="result-visual">
+                    <div class="result-ring" aria-hidden="true"></div>
+                    <div class="phone result-phone">
+                        <video muted playsinline preload="none" aria-hidden="true" data-poster="/images/posters/result.webp" data-media="v6" data-sources='{"ios":{"mp4":"/media/v6-ios-en.mp4","webm":"/media/v6-ios-en.webm","poster":"/media/v6-ios-en.webp"}}'></video>
+                    </div>
+                </div>
+                <div class="split-text">
+                    <p class="kicker">結果</p>
+                    <h2>どれだけ空いたか、ひと目でわかります</h2>
+                    <p class="lead">削除するたびに、どれだけ容量が空いたかが表示され、Pelusaも一緒に喜んでくれます。</p>
+                    <div class="trash card">
+                        <p class="trash-main"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#restore_from_trash"></use></svg><span>削除した写真は、通常30日間復元できます。その後、完全に削除されます。</span></p>
+                        <p class="trash-line only-not-ios">Android：削除した写真はスマートフォンのゴミ箱に移動します。Pelusaの「ゴミ箱」画面からそのまま復元できます。</p>
+                        <p class="trash-line only-not-android">iPhone：削除した写真は「写真」アプリの「最近削除した項目」に移動し、30日間保管されます。Pelusaには削除の履歴があり、「写真」を開くボタンもあります。</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat card"><b>0</b><span>ネットに送られる写真</span></div>
+                        <div class="stat card"><b>0</b><span>広告</span></div>
+                        <div class="stat card"><b><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#front_hand-fill"></use></svg></b><span>確認するまで何も削除されません</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="privacy">
+            <div class="wrap">
+                <div class="section-head section-head-row">
+                    <div>
+                        <p class="kicker">プライバシー</p>
+                        <h2>写真は手元に残ります</h2>
+                    </div>
+                    <img class="mascot-side" src="/images/mascot-content.svg" alt="" width="110" height="110" loading="lazy">
+                </div>
+                <ul class="chips privacy-chips">
+                    <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#photo_library"></use></svg><span>iPhoneとAndroid 14以降では、選んだ写真だけにアクセスを許可できます</span></li>
+                    <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#person_off"></use></svg><span>登録もアカウントも不要</span></li>
+                    <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#airplanemode_active"></use></svg><span>機内モードでも動作</span></li>
+                </ul>
+                <div class="privacy-grid">
+                    <article class="privacy-card card">
+                        <span class="tile tile-1"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#smartphone"></use></svg></span>
+                        <h3>写真はスマートフォンの外に出ません</h3>
+                        <p>Pelusaはギャラリーの写真をそのまま表示し、どこにも送信しません。私たちにも、ほかの誰にもです。</p>
+                    </article>
+                    <article class="privacy-card card">
+                        <span class="tile tile-2"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#front_hand"></use></svg></span>
+                        <h3>決めるのは自分だけ</h3>
+                        <p>写真が削除されるのは、スマートフォンのシステムの確認画面で確認した後だけです。その後でも、通常は復元できます。</p>
+                    </article>
+                    <article class="privacy-card card">
+                        <span class="tile tile-3"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#monitoring"></use></svg></span>
+                        <h3>統計を少しだけ、写真は送りません</h3>
+                        <p>「Pelusaの改善に協力する」がオンの場合、クラッシュレポートと利用統計をGoogleのFirebaseに送信します。写真、名前、広告IDは一切送信しません。EUでは最初はオフです。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="author">
+                <div class="author-photo">
+                    <img src="/images/author.webp" alt="" width="960" height="1280" loading="lazy">
+                </div>
+                <div class="author-text">
+                    <h2>妻のために、愛をこめて作りました ❤️</h2>
+                    <p class="author-p1">こんにちは、ブエノスアイレスで開発者をしているセルゲイです。Pelusaは、もともと妻へのプレゼントでした。夜、知らない人の動画ではなく、ふたりの思い出を眺めてほしかったんです。間にスクリーンショットやレシートが挟まることなく。</p>
+                    <p>Pelusaはひとりで、夜の時間に作っています。</p>
+                    <div class="socials"><a href="https://www.instagram.com/sorlovfit/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#instagram"></use></svg></a><a href="https://www.tiktok.com/@sorlovfit" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#tiktok"></use></svg></a><a href="https://www.youtube.com/@sorlovfit" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#youtube"></use></svg></a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="free-box">
+                <div>
+                    <h2>すべて無料</h2>
+                    <p class="free-p1">広告もサブスクリプションもありません。アプリの中のものはすべて無料です。</p>
+                    <p>Pelusaで夜のひとときが少し心地よくなったら、設定から作者を応援できます。お気に入りのカフェでチップを置くような気持ちで。お礼として、設定に「Pelusaを応援中」バッジが表示されます。私からの小さなありがとうです。今後、応援してくれた方向けのものが追加されたときも、金額に関係なく自動的に解放されます。</p>
+                </div>
+                <div class="supporter card">
+                    <img src="/images/mascot-happy.svg" alt="" width="130" height="130" loading="lazy">
+                    <div>
+                        <span class="supporter-where">設定画面</span>
+                        <span class="supporter-badge"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#favorite-fill"></use></svg><span>Pelusaを応援中</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="faq-wrap">
+                <h2>よくある質問</h2>
+                <div class="faq">
+                    <details open>
+                        <summary><span>Pelusaが写真へのアクセスを必要とするのはなぜですか？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>ギャラリーをフィードとして表示するためです。写真はスマートフォンの中で読み込まれ、どこにも送信されません。iPhoneとAndroid 14以降では、一部の写真だけにアクセスを許可することもでき、その場合Pelusaはその写真だけで動作します。また、削除はスマートフォンのシステムの確認画面で確認した後にしか行われません。</p>
+                    </details>
+                    <details>
+                        <summary><span>Pelusaが勝手に写真を削除することはありますか？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>いいえ。写真が削除されるのは、スマートフォンのシステムの確認画面で確認した後だけです。その後も、30日間は復元できます。ゴミ箱のない一部のAndroidスマートフォンでは、削除するとすぐに完全に削除されます。その場合は、Pelusaが結果画面でお知らせします。</p>
+                    </details>
+                    <details>
+                        <summary><span>削除した写真を元に戻すには？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>Androidでは、Pelusaの「ゴミ箱」画面から直接復元できます。iPhoneでは、「写真」アプリの「最近削除した項目」から復元できます。写真は30日間そこに保管されます。</p>
+                    </details>
+                    <details>
+                        <summary><span>iCloudやGoogle フォトからも写真が削除されますか？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>iPhone：「iCloud写真」がオンの場合、削除した写真はすべてのデバイスとiCloudから削除されます。これはiPhoneの標準の動作で、30日後に完全に削除されます。</p>
+                        <p>Android：Pelusaはスマートフォン内の写真だけを削除します。Google フォトにコピーがあれば、そのまま残ります。</p>
+                    </details>
+                    <details>
+                        <summary><span>インターネット接続は必要ですか？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>いいえ、Pelusaはオフラインで動作します。機内モードで試してみてください。ネットワークを使うのは、クラッシュレポートと統計の送信（アプリの設定でオフにできます）と、応援の購入のときだけです。「iCloud写真」をオンにしているiPhoneでは、全画面で開いた写真をシステムがiCloudからダウンロードすることがあります。</p>
+                    </details>
+                    <details>
+                        <summary><span>Pelusaは重複した写真や失敗した写真を見つけてくれますか？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>いいえ、あえてそうしています。何が大切かをAIが代わりに決めることはありません。スクロールして、思い出して、いらないものを入れ物へ放り込むだけです。</p>
+                    </details>
+                    <details>
+                        <summary><span>入れ物にはどんな意味がありますか？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>意味は自由に決めてください。アプリ内にラベルはありません。スクリーンショットは瓶、レシートは箱、「あとで整理する」はバケツへ。それぞれ音が違うので、聞き分けるのも簡単です。</p>
+                    </details>
+                    <details>
+                        <summary><span>なぜ無料なのですか？</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>Pelusaは家族のために作ったもので、たくさんの人に使ってほしいと思っています。広告もサブスクリプションもありません。お礼の気持ちを伝えたいときは、設定から作者を応援できます。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="download">
+            <div class="final">
+                <img class="final-icon" src="/images/icons/icon-512.webp" alt="" width="170" height="170" loading="lazy">
+                <h2>思い出をいくつか、好きなときに</h2>
+                    <div class="stores stores-final">
+<a class="badge badge-ios" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#apple"></use></svg><span class="badge-text"><b>App Store</b><small>からダウンロード</small></span></a>
+<a class="badge badge-gp" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#google-play"></use></svg><span class="badge-text"><b>Google Play</b><small>で手に入れよう</small></span></a><div class="qr"><img src="/images/qr-get.svg" alt="QRコード：pelusa.app/get" width="50" height="50" loading="lazy"><span>スマートフォンのカメラを向けると、対応するストアが開きます</span></div><div class="trademarks"><span class="only-not-ios">Google Play and the Google Play logo are trademarks of Google LLC.</span><span class="only-not-android">Apple, the Apple logo and App Store are trademarks of Apple Inc.</span></div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="legal-info">
+                <span class="footer-logo">Pelusa</span>
+                <div class="socials socials-footer"><a href="https://www.instagram.com/sorlovfit/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#instagram"></use></svg></a><a href="https://www.tiktok.com/@sorlovfit" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#tiktok"></use></svg></a><a href="https://www.youtube.com/@sorlovfit" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#youtube"></use></svg></a></div>
+                <span class="legal-name">OSV Labs</span>
+                <span>運営者 ORLOV, SERGEI</span>
+                <span>Avenida Santa Fe 3681, Piso 16, Departamento G, C1425BGL, Ciudad Autonoma de Buenos Aires, Argentina</span>
+                <span>CUIT: 20-96481946-8</span>
+                <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a>
+                <a href="tel:+5491176039734">+54 9 11 7603-9734</a>
+            </div>
+            <nav class="footer-links" aria-label="サイトのページ">
+                <a href="/ja/">ホーム</a>
+                <a href="/ja/contact/">お問い合わせ</a>
+                <a href="/privacy/">プライバシーポリシー</a>
+                <a href="/app-privacy/">アプリのプライバシーポリシー</a>
+                <a href="/terms/">利用規約</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Pelusa. 無断転載を禁じます。</p>
+            <details class="lang-menu lang-menu-up">
+                <summary aria-label="言語: 日本語"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#language"></use></svg><span>JA</span><svg class="ic ic-caret" aria-hidden="true" focusable="false"><use href="/images/icons.svg#expand_more"></use></svg></summary>
+                <ul><li><a href="/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es">Español (España)</a></li><li><a href="/es-419/" hreflang="es-419" lang="es-419" data-lang="es-419">Español (Latinoamérica)</a></li><li><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/fr-ca/" hreflang="fr-CA" lang="fr-CA" data-lang="fr-CA">Français (Canada)</a></li><li><a href="/it/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT" data-lang="pt-PT">Português (Portugal)</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja" aria-current="page">日本語</a></li></ul>
+            </details>
+        </div>
+    </footer>
+    <script type="application/json" id="page-data">{"lang":"ja","mb":"MB","snd_on":"サウンドをオフ","snd_off":"サウンドをオン","home":"/ja/","iosPt":""}</script>
+    <script src="/script.js?v=2.4"></script>
+</body>
+</html>

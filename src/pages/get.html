@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{{lang}}}">
+<head>
+{{>head}}
+</head>
+<body class="plat-desktop">
+    <main class="get-main" id="main">
+        <a href="{{{home}}}" class="get-icon"><img src="/images/icons/icon-512.webp" alt="Pelusa" width="120" height="120"></a>
+        <h1 data-get="{{{get_mode}}}">{{{get_title}}}</h1>
+{{{stores:get}}}
+        <a class="header-download" id="getHome" href="{{{home}}}">{{nav_home_long}}</a>
+    </main>
+{{{page_data}}}
+    <script src="/script.js?v={{{version}}}"></script>
+</body>
+</html>

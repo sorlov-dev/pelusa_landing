@@ -1,0 +1,167 @@
+<p>Pelusa is an app for calmly tidying up your photo gallery on iPhone and Android. This policy explains what data the app has, what of it leaves your phone, and what stays only with you. The pelusa.app website has its own <a href="/privacy/">Privacy Policy</a>.</p>
+
+<div class="legal-callout">
+    <h2>In short</h2>
+    <ul>
+        <li><strong>Photos are never uploaded.</strong> Pelusa shows them straight from your phone’s gallery and processes them only on the device.</li>
+        <li><strong>Only the system deletes photos</strong>, after your “yes” in the system dialog. Usually you can restore them for 30 more days.</li>
+        <li><strong>A few stats, no photos.</strong> Pelusa sends crash reports and usage stats to Firebase by Google. It never sends photos, file names, your name or the advertising ID.</li>
+        <li><strong>You can turn it off</strong> in Settings, under “Help make Pelusa better”. In the EU, the EEA, the UK, Switzerland, Canada and South Korea, collection is off until you turn it on.</li>
+        <li><strong>Payments are handled by the store</strong>, Google Play or the App Store. We never see your card details. Support purchases are recorded by RevenueCat, and only if you open the support screen or buy something.</li>
+        <li><strong>No accounts, no ads.</strong> We don’t sell or share your data.</li>
+    </ul>
+</div>
+
+<h2>1. Who is responsible for the data</h2>
+<p>The controller is OSV Labs, the trading name of ORLOV, SERGEI (Sergei Orlov), an independent entrepreneur (monotributista).<br>
+Avenida Santa Fe 3681, Piso 16, Departamento G, C1425BGL, Ciudad Autonoma de Buenos Aires, Argentina<br>
+Email: <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a></p>
+<p>Full operator details are on the <a href="/contact/">contact page</a>. Below, “we” means OSV Labs, the developer of Pelusa.</p>
+
+<h2>2. What stays on your phone only</h2>
+<p>Everything you work with in the app is stored on your device and is never sent to us:</p>
+<ul>
+    <li>the photos themselves and their thumbnails;</li>
+    <li>internal references to photos in the gallery (identifiers and file addresses inside the phone) and a cache of file sizes;</li>
+    <li>the stack, the containers, Pelusa’s trash history and deletion statistics;</li>
+    <li>settings (sound, vibration, feed and others) and whether your phone has a system trash;</li>
+    <li>session counters (how many drops, deletions and undos), kept in memory and reset;</li>
+    <li>“first time did X” marks, install time, session count, the last time the app went to the background, the type of photo access at the previous launch and the exact library size. Only coarse ranges of these ever leave the phone, as described in section 5;</li>
+    <li>whether you are in a region where collection is off until you turn it on (section 4);</li>
+    <li>when the app last offered to rate it, so it doesn’t ask too often;</li>
+    <li>a copy of your supporter status and of the purchase state, so the badge shows right away, even offline;</li>
+    <li>reminders: the chosen days and time, when the app was last opened and how many reminders arrived since. Reminders are scheduled by the phone itself as local notifications, with no server of ours and no push service. Their text is put together on the phone.</li>
+</ul>
+<p>On Android this data is not included in cloud backups and is not transferred to a new phone. On iPhone it may be included in your iCloud backup along with other apps’ data; the photos and thumbnails themselves are not. If you uninstall Pelusa, this data is deleted with the app. The photos in your gallery stay where they are.</p>
+<p>On Android, Pelusa’s window is protected from screenshots and hides its content in the recent apps list, so your photos don’t accidentally end up in a screenshot or a screen recording.</p>
+
+<h2>3. Photo access and deletion</h2>
+<p>Pelusa asks for access to your photos to show them as a feed. On Android 14+ and iPhone you can grant access to selected photos only, and the app will work with those.</p>
+<p>Pelusa never deletes photos on its own. When you delete photos from a container, the app asks the system to delete them, and the system shows its own confirmation dialog. Only after you agree do the photos go:</p>
+<ul>
+    <li><strong>on Android</strong>, to the system trash, where they can usually be restored for about 30 days, including right from Pelusa. Some Android phones have no trash, and photos are deleted right away and permanently. Pelusa can only find this out after the first deletion and then says so on the results screen;</li>
+    <li><strong>on iPhone</strong>, to Recently Deleted in the Photos app, where they are kept for 30 days. If iCloud Photos is on, the photo is also removed from your other devices and from iCloud. That’s standard iPhone behavior.</li>
+</ul>
+<p>When that period ends, the system deletes the photos for good.</p>
+
+<h2>4. When collection is on</h2>
+<p>Crash reports and usage statistics are controlled by the <strong>“Help make Pelusa better”</strong> switch in Settings.</p>
+<ul>
+    <li><strong>In the EU, the EEA, the UK, Switzerland, Canada and South Korea</strong>, it is off until you turn it on. The same switch appears on the privacy step of onboarding, off by default. Until you turn it on, nothing is sent to Firebase. On iPhone, Firebase isn’t even started.</li>
+    <li><strong>In all other countries</strong>, it is on from the first launch, and data starts being sent during onboarding. You can turn it off at any time.</li>
+</ul>
+<p>Pelusa works out the country from the phone itself. On Android, it checks the SIM card country, the mobile network country and the region of the phone’s language setting. On iPhone, it checks the region in Settings and your App Store country. If any of these points to the EU (including its outermost regions, such as the Canary Islands or Réunion), the EEA, the UK, Switzerland, Canada, South Korea, Saint Pierre and Miquelon or Saint Barthélemy, or if the country can’t be determined, the switch starts off. Once Pelusa has seen such a country, it remembers this, and the switch stays off by default even if you later travel or change the SIM card. Your own choice of the switch always takes priority.</p>
+
+<h2>5. What we collect</h2>
+<p>While the switch is on, the app sends the following through Firebase services:</p>
+<ol>
+    <li><strong>Crash reports.</strong> The error type, where in the code it happened (stack trace) and the error message. Messages that Pelusa writes itself are cleaned before sending: addresses, paths, file names, identifiers and numbers of 4 or more digits are removed. If a system error message contains such data, Pelusa replaces it. Firebase adds the device model, the system and Pelusa versions, free memory and storage, and the time of the crash.</li>
+    <li><strong>Launch time</strong>, as a coarse range (for example, “1 to 2 seconds”).</li>
+    <li><strong>Feature usage.</strong>
+        <ul>
+            <li><strong>Screens.</strong> Which screens are opened, without container numbers or names.</li>
+            <li><strong>Feed and containers.</strong> How photo selection started (tap, long press or swipe across the feed); dropping a stack into a container (stack size as a range, the container’s material, how long the stack took to gather); undoing a drop and how soon; how a selection was cleared; returning photos to the feed; opening a photo full screen; “hide”; changes to the feed layout; adding and removing a container and its material; marking photos to keep and “Keep all” (on or off); how leaving a container ended.</li>
+            <li><strong>Deletion and trash.</strong> The start of a deletion (how many photos and how many kept, as ranges); its outcome (done, declined in the system dialog, or failed); a failed photo operation (which operation and one of three error classes, without the error text); restoring and deleting from Pelusa’s trash, confirmed or declined; where the trash was opened from; items of the app icon menu.</li>
+            <li><strong>Getting started.</strong> Onboarding steps and how long they took; the type of photo access granted and whether it changed later.</li>
+            <li><strong>Sound and reminders.</strong> Answers on the “Sound” and “Reminders” steps and whether the silent mode hint was shown; opening the app from a reminder and a reminder being shown, without days, times or reminder text.</li>
+            <li><strong>Hints and settings.</strong> Hints shown, dismissed, learned or reset; which setting was changed and to what. Changing the “Help make Pelusa better” switch itself is not sent.</li>
+            <li><strong>Support and rating.</strong> Opening the support screen and which of the five amount buttons was tapped; tapping the line that invites you to rate the app; the app asking the system to show its rating window, and on which screen. Whether the window actually appeared and what rating you gave are not known to the app and are not sent.</li>
+            <li><strong>Mini-game.</strong> Opening the game and where from; a round starting (which round of the visit, whether it continues after a pause), a pause and a round ending (score, duration, number of jumps and share of long ones, as ranges; whether the best score was beaten; which container Pelusa fell from; the speed level); the invitation to tidy up photos under the “Again” button being shown and tapped; leaving the game (number of rounds and best score as ranges, and how you left).</li>
+            <li><strong>Session summary.</strong> When the app goes to the background: duration, and the number of drops, deletions, photo views and undos, as ranges.</li>
+            <li><strong>First steps.</strong> The first selection, drop, deletion and restore: once per install, with how long since install and which session it was, as ranges, without dates or time of day.</li>
+        </ul>
+        <p>Every event uses only fixed labels and ranges from a closed list built into the app. Numbers are only ever coarse ranges: photo count, stack size, storage volume, time. <em>Which</em> photos they are is never sent.</p>
+    </li>
+    <li><strong>Sound and settings state</strong>, as device properties attached to events: ringer mode (not available to apps on iPhone); media volume in four steps; audio output type (speaker, wired headphones, bluetooth, other), without device names; whether Pelusa’s sounds can be heard (yes, no, maybe); whether sound, vibration, reduced motion and reminders are on in Pelusa, and whether notifications are denied in the system; the type of photo access; feed settings; library size as one of five coarse ranges (up to 100 photos, 1,000, 5,000, 20,000, more); the best game score as a range. This helps us understand whether sounds are audible and tune speed for different libraries. These values are sent when they change and again when you turn the switch back on.</li>
+    <li><strong>Events that Firebase records automatically</strong>, such as first open, session start, engagement time, app update, system update, app data cleared and app removal.</li>
+    <li><strong>Service identifiers.</strong> Random installation IDs created by Firebase to tell one installation from another. They are not linked to your name, email or account.</li>
+    <li><strong>General environment.</strong> Device language and country. Google may determine the country from the IP address; the IP address itself is not passed to us.</li>
+</ol>
+
+<h2>6. What we don’t collect</h2>
+<ul>
+    <li>photos, their thumbnails or content;</li>
+    <li>file names, paths, albums, photo metadata (EXIF), geotags;</li>
+    <li>your name, email, phone number, contacts;</li>
+    <li>precise location;</li>
+    <li>the device advertising ID (the app doesn’t have permission to read it on Android and doesn’t request it on iPhone);</li>
+    <li>exact sizes, counts, dates and time of day, only the coarse ranges described above;</li>
+    <li>album names, names of connected headphones and speakers, Do Not Disturb status;</li>
+    <li>text you type, or details of photo errors, only the error class;</li>
+    <li>the rating you give in the store;</li>
+    <li>through Firebase, the outcome of a support purchase: only the amount button that was tapped.</li>
+</ul>
+<p>Pelusa has no ads and no accounts, and it doesn’t track you across other companies’ apps or websites.</p>
+
+<h2>7. Firebase (Google)</h2>
+<p>Crash reports and usage statistics are processed by <strong>Firebase</strong>, a service of Google LLC (Firebase Crashlytics and Google Analytics for Firebase). Google processes this data on our behalf under its data processing terms. In the app, advertising storage and ad user data are denied, and on iPhone the vendor identifier is not collected. In the service settings we have turned off Google signals, ad personalization, granular location data and links to advertising products.</p>
+<p>More: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+<h2>8. “Support the author” purchases</h2>
+<p>Pelusa is free. Support purchases are voluntary. Payment is processed by the store, <strong>Google Play</strong> on Android or the <strong>App Store</strong> on iPhone, under its own privacy policy. We <strong>never see</strong> your card number or other payment details. From the store we receive order details (order number, item, price, date, country or region), which we need for accounting and taxes.</p>
+<p><strong>RevenueCat.</strong> Purchases are verified and recorded by <strong>RevenueCat, Inc. (USA)</strong> on our behalf. It receives:</p>
+<ul>
+    <li>support purchase history: which item, when, price and currency, and the store transaction data needed to verify the purchase;</li>
+    <li>a random Customer ID (like <code>$RCAnonymousID:…</code>). It isn’t linked to your name, email or account. On Android a new one appears after reinstalling; on iPhone the same one may come back if you restore the phone from an iCloud backup;</li>
+    <li>store country, language and currency, app and system versions; the IP address is visible to its server when connecting, as with any website.</li>
+</ul>
+<p>RevenueCat does not receive advertising IDs, contacts, photos or usage events. We don’t send it any other attributes, and its diagnostics are turned off. The “Pelusa supporter” status is stored by RevenueCat and the store.</p>
+<p><strong>When the app contacts RevenueCat:</strong> when you open the “Support the author” screen, buy something or tap “Restore purchases”. At launch, only if you have already supported (at most once a day) or a purchase is pending. If you have never bought anything or opened the support screen, the app does not contact RevenueCat.</p>
+<p><strong>Deleting purchase data.</strong> At the bottom of the support screen there is a “Customer ID” line. Tap it to copy the ID and send it to us. We will delete the purchase data for that ID at RevenueCat. Order records held by the store, and records we must keep for accounting and taxes, are kept as long as the law requires.</p>
+<p>RevenueCat’s policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+
+<h2>9. Store services in the app</h2>
+<ul>
+    <li><strong>Google Play (Android).</strong> Purchases go through the Google Play Billing library, and the rating window is shown by the Google Play In-App Review library. These libraries send Google technical information about their own operation. Google does this under its own privacy policy, the switch in Pelusa doesn’t affect it, and as far as we know this information is not passed to us.</li>
+    <li><strong>App Store (iPhone).</strong> Purchases and the rating window go through Apple’s StoreKit, under Apple’s privacy policy. Pelusa asks StoreKit for your App Store country (see section 4).</li>
+</ul>
+<p>The rating window belongs to the store. Your rating and review go directly to Google or Apple, and the store doesn’t tell the app whether you rated it. The line that invites you to rate the app opens Pelusa’s page in the store.</p>
+
+<h2>10. Why we need data and on what legal basis</h2>
+<ul>
+    <li><strong>Crash reports and usage statistics</strong>, to find and fix bugs and crashes, and to understand which features are useful and which are confusing. Legal basis: in the EU, the EEA, the UK, Switzerland, Canada and South Korea, your consent (the switch turned on); in other countries, our legitimate interest in keeping the app working and improving it. You can withdraw consent or object at any time by turning the switch off.</li>
+    <li><strong>Purchases</strong>, to process your support purchase, give you the supporter status and restore it. Legal basis: performance of the contract with you.</li>
+    <li><strong>Order records</strong>, for accounting and taxes. Legal basis: our legal obligations.</li>
+    <li><strong>Emails you send us</strong>, to reply and handle your request. Legal basis: our legitimate interest in answering you, or steps you asked us to take. Mail to contact@orlovs.dev is forwarded by Cloudflare Email Routing to our mailbox on Gmail (Google).</li>
+</ul>
+<p>We do not use this data for advertising, do not build profiles of people from it, and do not sell or share it, including as “selling” and “sharing” are defined in California law (CCPA/CPRA). Data is received only by the providers named in this policy, acting for us, and by authorities where the law explicitly requires it. We don’t make decisions about you based solely on automated processing.</p>
+
+<h2>11. How long data is kept</h2>
+<ul>
+    <li>Detailed usage events: <strong>2 months</strong>. Google deletes expired events automatically about once a month, so in practice they are kept for 2 to 3 months. Aggregated reports without data about a particular person may be kept longer.</li>
+    <li>Crash reports: <strong>90 days</strong>, after which they are deleted automatically.</li>
+    <li>Purchase data at RevenueCat: while the supporter status needs to be checked and restored, until you ask us to delete it.</li>
+    <li>Order records for accounting and taxes: as long as tax law requires.</li>
+    <li>Emails: as long as needed to handle your request.</li>
+    <li>Data on your phone: until you uninstall Pelusa or clear its data.</li>
+</ul>
+
+<h2>12. How to turn collection off</h2>
+<p>Open Settings and turn off <strong>“Help make Pelusa better”</strong>. From then on the app stops sending crash reports and statistics to Firebase. Firebase’s local data on the phone is reset, including its installation ID, and unsent crash reports and queued events are deleted. Pelusa’s own marks from section 2 stay on the phone and are not sent. You can turn the switch back on in the same place.</p>
+<p>The switch does not affect support purchases or the store services in section 9: purchases don’t work without that data.</p>
+<p>Data sent before you turned it off is deleted automatically on the schedule above; you don’t need to do anything. It isn’t linked to your name or email, and turning the switch off also resets the installation ID on your phone, so neither you nor we can find your specific records in Firebase or delete them sooner on request.</p>
+
+<h2>13. International transfers</h2>
+<p>Google (Firebase and Gmail), Cloudflare (email forwarding), RevenueCat and the stores may process data outside your country, including in the USA. For transfers from the EU, the EEA, the UK and Switzerland, Google and Cloudflare rely on the EU-US Data Privacy Framework and its UK and Swiss extensions, and on Standard Contractual Clauses; RevenueCat relies on Standard Contractual Clauses in its data processing agreement. For transfers from Argentina, these providers rely on contractual safeguards.</p>
+
+<h2>14. Security</h2>
+<p>Data is sent to Firebase and RevenueCat only over an encrypted connection (HTTPS). Only the developer has access to their consoles.</p>
+
+<h2>15. Your rights</h2>
+<p>Depending on where you live, you may ask us to tell you what data about you we hold, to give you a copy, to correct or delete it, to restrict its processing or to object to it, and you may withdraw consent at any time (turning the switch off is enough). To do so, write to <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a>. For purchase data, include your Customer ID from the support screen. We reply within the time limits set by law: within one month under the GDPR and within 10 days for an access request under Argentine law.</p>
+<p>Pelusa has no accounts, so there is no account to delete. Statistics are removed by turning the switch off and on the schedule above, purchase data is deleted on request, and everything else is deleted when you uninstall the app.</p>
+<p>You may also complain to a data protection authority: in Argentina, the Agency for Access to Public Information (AAIP); in the EU or the EEA, the authority of your country; in the UK, the Information Commissioner’s Office (ICO); in Switzerland, the Federal Data Protection and Information Commissioner (FDPIC).</p>
+<p>Argentine Law 25.326 on the protection of personal data applies to this processing, and for users in the EU, the EEA, the UK and Switzerland, the GDPR, the UK GDPR and the Swiss FADP apply as well. Under Law 25.326, you may access your personal data free of charge at intervals of no less than six months, unless you show a legitimate interest in doing so sooner (article 14, paragraph 3). The AAIP, as the supervisory authority under Law 25.326, handles complaints from anyone whose rights under the personal data protection rules have been breached.</p>
+
+<h2>16. Children</h2>
+<p>Pelusa is not intended for anyone under 16 and does not knowingly collect their data. If you believe a child used the app with collection on, write to us and we will help delete the data.</p>
+
+<h2>17. Changes to this policy</h2>
+<p>If this policy changes, we will publish the new version on this page and update the “Last updated” date at the top. We will tell you about significant changes in the app or in the update notes. If a change needs your consent, we will ask for it again.</p>
+
+<h2>18. Language versions</h2>
+<p>This policy is published in English and Spanish. Both versions say the same thing and are equally valid. If they ever differ, the meaning that is more favorable to you applies.</p>
+
+<h2>19. Contact</h2>
+<p>OSV Labs (ORLOV, SERGEI), Buenos Aires, Argentina<br>
+Email: <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a></p>

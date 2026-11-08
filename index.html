@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelusa – clean up your photo gallery and free up storage</title>
+    <meta name="description" content="Scroll your photos as a feed and drop what you don’t need into containers. Free up space while your photos stay on your phone. Free, no ads.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pelusa.app/">
+    <link rel="alternate" hreflang="en" href="https://pelusa.app/">
+    <link rel="alternate" hreflang="es" href="https://pelusa.app/es/">
+    <link rel="alternate" hreflang="es-419" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-AR" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-MX" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CO" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CL" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PE" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-VE" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-EC" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-GT" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CU" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-BO" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-DO" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-HN" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PY" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-SV" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-NI" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-CR" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PA" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-UY" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-PR" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="es-US" href="https://pelusa.app/es-419/">
+    <link rel="alternate" hreflang="ru" href="https://pelusa.app/ru/">
+    <link rel="alternate" hreflang="de" href="https://pelusa.app/de/">
+    <link rel="alternate" hreflang="fr" href="https://pelusa.app/fr/">
+    <link rel="alternate" hreflang="fr-CA" href="https://pelusa.app/fr-ca/">
+    <link rel="alternate" hreflang="it" href="https://pelusa.app/it/">
+    <link rel="alternate" hreflang="pt-BR" href="https://pelusa.app/pt-br/">
+    <link rel="alternate" hreflang="pt-PT" href="https://pelusa.app/pt-pt/">
+    <link rel="alternate" hreflang="ja" href="https://pelusa.app/ja/">
+    <link rel="alternate" hreflang="x-default" href="https://pelusa.app/">
+    <meta name="theme-color" content="#F4ECE1">
+    <link rel="icon" type="image/svg+xml" href="/images/icons/favicon.svg?v=e2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32.png?v=e2">
+    <link rel="apple-touch-icon" href="/images/icons/icon-180.png?v=e">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pelusa">
+    <meta property="og:url" content="https://pelusa.app/">
+    <meta property="og:title" content="Pelusa – clean up your photo gallery and free up storage">
+    <meta property="og:description" content="Scroll your photos as a feed and free up space. Free, no ads, photos never leave your phone.">
+    <meta property="og:image" content="https://pelusa.app/images/og/og-en.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="es_LA">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="fr_CA">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/style.css?v=2.4">
+    <script src="/lang.js?v=2.4"></script>
+</head>
+<body class="plat-desktop">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="header-bar">
+            <a href="/" class="logo" aria-label="Pelusa">
+                <img src="/images/icons/icon-72.png" alt="" width="34" height="34">
+                <span>Pelusa</span>
+            </a>
+            <nav class="header-nav" aria-label="Sections">
+                <a href="#how">How it works</a>
+                <a href="#sound">Sound</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <details class="lang-menu">
+                <summary aria-label="Language: English"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#language"></use></svg><span>EN</span><svg class="ic ic-caret" aria-hidden="true" focusable="false"><use href="/images/icons.svg#expand_more"></use></svg></summary>
+                <ul><li><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="page">English</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es">Español (España)</a></li><li><a href="/es-419/" hreflang="es-419" lang="es-419" data-lang="es-419">Español (Latinoamérica)</a></li><li><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/fr-ca/" hreflang="fr-CA" lang="fr-CA" data-lang="fr-CA">Français (Canada)</a></li><li><a href="/it/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT" data-lang="pt-PT">Português (Portugal)</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li></ul>
+            </details>
+            <a href="#download" class="header-download" data-download>
+                <svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#download"></use></svg><span>Download</span>
+            </a>
+        </div>
+    </header>
+    <div class="lang-offer" id="langOffer" hidden></div>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="pill"><svg class="ic pill-icon" aria-hidden="true" focusable="false"><use href="/images/icons.svg#lock-fill"></use></svg><span>Free · No ads · Photos never leave your phone</span></div>
+                    <h1>Scroll through memories. Free up memory.</h1>
+                    <p class="hero-sub">A feed as gripping as any other, but made of your photos and actually useful. Drop screenshots, blurry photos and duplicates into containers, then delete them to free up space.</p>
+                    <div class="stores" id="get">
+<a class="badge badge-ios" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#apple"></use></svg><span class="badge-text"><small>Download on the</small><b>App Store</b></span></a>
+<a class="badge badge-gp" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#google-play"></use></svg><span class="badge-text"><small>GET IT ON</small><b>Google Play</b></span></a><div class="qr"><img src="/images/qr-get.svg" alt="QR code: pelusa.app/get" width="50" height="50"><span>Scan with your phone’s camera to open the right store</span></div>
+                    </div>
+                    <p class="platforms">iPhone (iOS 26+) and Android 11+ · 8 languages</p>
+                </div>
+
+                <div class="hero-phone-col">
+                    <div class="hero-disc" aria-hidden="true"></div>
+                    <div class="hero-phone-wrap has-video">
+                        <div class="phone hero-phone" id="heroPhone">
+                            <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true" data-media="v1" poster="/media/v1-ios-en.webp" data-sources='{"ios":{"mp4":"/media/v1-ios-en.mp4","webm":"/media/v1-ios-en.webm","poster":"/media/v1-ios-en.webp"}}'></video>
+                            <div class="feed" id="heroFeed" aria-hidden="true"></div>
+                            <div class="statusbar" aria-hidden="true"><span>9:41</span><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#signal_cellular_4_bar"></use></svg></div>
+                            <button type="button" class="sound-toggle" id="soundToggle">
+                                <svg class="ic ic-on" aria-hidden="true" focusable="false"><use href="/images/icons.svg#volume_up-fill"></use></svg><svg class="ic ic-off" aria-hidden="true" focusable="false"><use href="/images/icons.svg#volume_off"></use></svg><span id="soundLabel">Turn on sound</span>
+                            </button>
+                            <div class="feed-fade" aria-hidden="true"></div>
+                            <div class="plate" aria-hidden="true"></div>
+                            <div class="plate-row" aria-hidden="true">
+                                <div class="bk bk-jar" id="heroJar"><img src="/images/buckets/jar.svg" alt=""><span class="bk-count" id="heroJarCount" hidden>5</span></div>
+                                <div class="bk bk-box"><img src="/images/buckets/box.svg" alt=""></div>
+                                <div class="bk bk-bin"><img src="/images/buckets/bin.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="freed" aria-hidden="true"><span>set aside</span><b id="heroFreed">312 MB</b></div>
+                        <img class="hero-mascot" src="/images/mascot-happy.svg" alt="" width="130" height="130">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="contrast">
+                <div class="contrast-item contrast-reels">
+                    <svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#smart_display"></use></svg>
+                    <p>20 minutes of scrolling the feed – nothing changed.</p>
+                </div>
+                <div class="contrast-item contrast-pelusa">
+                    <svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#favorite-fill"></use></svg>
+                    <p>20 minutes of Pelusa – free space on your phone and a pleasant dose of nostalgia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="how">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">How it works</p>
+                    <h2>Three steps to free up space</h2>
+                </div>
+                <div class="steps">
+                    <article class="step step-1">
+                        <div class="step-head"><span class="step-n">1</span><h3>Hold a photo</h3></div>
+                        <p>Hold a photo you don’t need, then tap others. They gather into a stack.</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="/images/posters/feed.webp" data-media="v2" data-sources='{"ios":{"mp4":"/media/v2-ios-en.mp4","webm":"/media/v2-ios-en.webm","poster":"/media/v2-ios-en.webp"}}'></video>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="step step-2">
+                        <div class="step-head"><span class="step-n">2</span><h3>Drop the stack in a container</h3></div>
+                        <p>Drag the stack into the jar, the box or the bucket. Or just tap the container you want.</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone step-phone-low">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="/images/posters/drag.webp" data-media="v3" data-sources='{"ios":{"mp4":"/media/v3-ios-en.mp4","webm":"/media/v3-ios-en.webm","poster":"/media/v3-ios-en.webp"}}'></video>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="step step-3">
+                        <div class="step-head"><span class="step-n">3</span><h3>Look inside and delete</h3></div>
+                        <p>Open a container, mark what to keep and tap “Delete the rest”. You can usually restore deleted photos for 30 days.</p>
+                        <div class="step-visual">
+                            <div class="phone step-phone">
+                                <video muted loop playsinline preload="none" aria-hidden="true" data-poster="/images/posters/bucket.webp" data-media="v4" data-sources='{"ios":{"mp4":"/media/v4-ios-en.mp4","webm":"/media/v4-ios-en.webm","poster":"/media/v4-ios-en.webp"}}'></video>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split has-video">
+                <div class="split-text">
+                    <p class="kicker">Nostalgia</p>
+                    <h2>Remember that summer?</h2>
+                    <p class="lead">Pick “Oldest first” in Sort and scroll back through the years. To keep new photos out of the way, use “Show photos” in Settings.</p>
+                </div>
+                <div class="years card">
+                    <div class="chips">
+                        <span class="chip chip-on"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#swap_vert"></use></svg><span>Oldest first</span></span>
+                        <span class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#filter_alt"></use></svg><span>Older than a year</span></span>
+                        <span class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#filter_alt"></use></svg><span>Older than two years</span></span>
+                        <span class="chip chip-on"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#filter_alt"></use></svg><span>Older than three years</span></span>
+                    </div>
+                    <div class="year"><div class="year-label"><b>2016</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p13.webp" alt="" loading="lazy"><img src="/images/photos/p02.webp" alt="" loading="lazy"><img src="/images/photos/p09.webp" alt="" loading="lazy"></div></div>
+                    <div class="year"><div class="year-label"><b>2017</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p11.webp" alt="" loading="lazy"><img src="/images/photos/p04.webp" alt="" loading="lazy"><img src="/images/photos/p16.webp" alt="" loading="lazy"></div></div>
+                    <div class="year"><div class="year-label"><b>2018</b><i></i></div>
+                        <div class="year-grid"><img src="/images/photos/p14.webp" alt="" loading="lazy"><img src="/images/photos/p10.webp" alt="" loading="lazy"><img src="/images/photos/p06.webp" alt="" loading="lazy"></div></div>
+                </div>
+                <div class="nos-visual">
+                    <div class="phone nos-phone">
+                        <video muted loop playsinline preload="none" aria-hidden="true" data-media="v7" data-sources='{"ios":{"mp4":"/media/v7-ios-en.mp4","webm":"/media/v7-ios-en.webm","poster":"/media/v7-ios-en.webp"}}'></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="sound">
+            <div class="sound-box">
+                <div class="split-text">
+                    <p class="kicker kicker-light">Sound and feel</p>
+                    <h2>You hear it and feel it in your hand</h2>
+                    <p class="lead">Each container has its own sound. The jar rings, the box thuds, the bag rustles, and your phone gives a soft tap in your palm. The sounds are real recordings, no AI. Just a pantry, containers and beans.</p>
+                    <ul class="chips chips-dark">
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#graphic_eq"></use></svg><span>Its own sound for each container</span></li>
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#vibration"></use></svg><span>A soft tap in your hand</span></li>
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#volume_off"></use></svg><span>Works without sound</span></li>
+                        <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#motion_photos_off"></use></svg><span>Supports “Reduce motion”</span></li>
+                    </ul>
+                </div>
+                <div class="sound-pad">
+                    <div class="tap-hint"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#touch_app"></use></svg><span>Tap a container</span></div>
+                    <div class="sound-row">
+                        <button type="button" class="sound-btn" data-sound="jar"><span class="bk bk-dark bk-jar-d"><img src="/images/buckets/jar-dark.svg" alt=""></span><span>Jar</span></button>
+                        <button type="button" class="sound-btn" data-sound="box"><span class="bk bk-dark bk-box-d"><img src="/images/buckets/box-dark.svg" alt=""></span><span>Box</span></button>
+                        <button type="button" class="sound-btn" data-sound="bin"><span class="bk bk-dark bk-bin-d"><img src="/images/buckets/bin-dark.svg" alt=""></span><span>Bucket</span></button>
+                        <button type="button" class="sound-btn" data-sound="bag"><span class="bk bk-dark bk-bag-d"><img src="/images/buckets/bag-dark.svg" alt=""></span><span>Bag</span></button>
+                        <button type="button" class="sound-btn" data-sound="crate"><span class="bk bk-dark bk-tub-d"><img src="/images/buckets/tub-dark.svg" alt=""></span><span>Tub</span></button>
+                    </div>
+                    <p class="pad-note">You start with three. Add more any time, including a bag and a tub.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split split-result">
+                <div class="result-visual">
+                    <div class="result-ring" aria-hidden="true"></div>
+                    <div class="phone result-phone">
+                        <video muted playsinline preload="none" aria-hidden="true" data-poster="/images/posters/result.webp" data-media="v6" data-sources='{"ios":{"mp4":"/media/v6-ios-en.mp4","webm":"/media/v6-ios-en.webm","poster":"/media/v6-ios-en.webp"}}'></video>
+                    </div>
+                </div>
+                <div class="split-text">
+                    <p class="kicker">Result</p>
+                    <h2>See how much space you freed</h2>
+                    <p class="lead">After each deletion, Pelusa shows how much space you freed up and celebrates with you. Stats add it all up by week.</p>
+                    <div class="trash card">
+                        <p class="trash-main"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#restore_from_trash"></use></svg><span>You can usually restore deleted photos for 30 days. After that, they’re erased permanently.</span></p>
+                        <p class="trash-line only-not-ios">Android: deleted photos go to your phone’s trash. Restore them right in Pelusa, on the Trash screen.</p>
+                        <p class="trash-line only-not-android">iPhone: deleted photos go to Recently Deleted in the Photos app and stay there for 30 days. Pelusa keeps a history of what was deleted, with a button that opens Photos.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat card"><b>0</b><span>photos go online</span></div>
+                        <div class="stat card"><b>0</b><span>ads</span></div>
+                        <div class="stat card"><b><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#front_hand-fill"></use></svg></b><span>Nothing is deleted until you confirm</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="privacy">
+            <div class="wrap">
+                <div class="section-head section-head-row">
+                    <div>
+                        <p class="kicker">Privacy</p>
+                        <h2>Your photos, your call</h2>
+                    </div>
+                    <img class="mascot-side" src="/images/mascot-content.svg" alt="" width="110" height="110" loading="lazy">
+                </div>
+                <ul class="chips privacy-chips">
+                    <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#photo_library"></use></svg><span>On iPhone and Android 14+ you can grant access to selected photos only</span></li>
+                    <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#person_off"></use></svg><span>No sign-up, no account</span></li>
+                    <li class="chip"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#airplanemode_active"></use></svg><span>Works in airplane mode</span></li>
+                </ul>
+                <div class="privacy-grid">
+                    <article class="privacy-card card">
+                        <span class="tile tile-1"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#smartphone"></use></svg></span>
+                        <h3>Your photos stay on your phone</h3>
+                        <p>Pelusa shows photos right from your gallery and never sends them anywhere, not to us, not to anyone.</p>
+                    </article>
+                    <article class="privacy-card card">
+                        <span class="tile tile-2"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#front_hand"></use></svg></span>
+                        <h3>Only you decide</h3>
+                        <p>Photos are deleted only after you confirm in the phone’s system dialog. And even then you can usually restore them.</p>
+                    </article>
+                    <article class="privacy-card card">
+                        <span class="tile tile-3"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#monitoring"></use></svg></span>
+                        <h3>A few stats, no photos</h3>
+                        <p>When “Help make Pelusa better” is on, Pelusa sends crash reports and usage stats to Firebase by Google, never your photos, name or advertising ID. In the EU, it’s off until you turn it on.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="author">
+                <div class="author-photo">
+                    <img src="/images/author.webp" alt="" width="960" height="1280" loading="lazy">
+                </div>
+                <div class="author-text">
+                    <h2>Made with love for my wife ❤️</h2>
+                    <p class="author-p1">Hi, I’m Sergei, a developer from Buenos Aires. Pelusa started as a gift for my wife: I wanted her to spend her evenings scrolling through our memories instead of strangers’ stories, with no screenshots or receipts in the way.</p>
+                    <p>I build Pelusa on my own, in the evenings.</p>
+                    <div class="socials"><a href="https://www.instagram.com/sorlovfit/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#instagram"></use></svg></a><a href="https://www.tiktok.com/@sorlovfit" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#tiktok"></use></svg></a><a href="https://www.youtube.com/@sorlovfit" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#youtube"></use></svg></a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="free-box">
+                <div>
+                    <h2>Free for everyone</h2>
+                    <p class="free-p1">No ads, no subscriptions. Every feature is free.</p>
+                    <p>If Pelusa made your evening a little cozier, you can support the author with a one-time purchase, like leaving a tip at your favorite café. In return, a “Pelusa supporter” badge appears in Settings. Any amount unlocks all supporter extras, including future ones.</p>
+                </div>
+                <div class="supporter card">
+                    <img src="/images/mascot-happy.svg" alt="" width="130" height="130" loading="lazy">
+                    <div>
+                        <span class="supporter-where">In Settings</span>
+                        <span class="supporter-badge"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#favorite-fill"></use></svg><span>Pelusa supporter</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="faq-wrap">
+                <h2>Questions</h2>
+                <div class="faq">
+                    <details open>
+                        <summary><span>Why does Pelusa need access to my photos?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>To show your gallery as a feed. Pelusa shows photos right from your gallery and never sends them anywhere. On iPhone and Android 14+ you can allow access to selected photos only, and Pelusa will work with those. Nothing is deleted until you confirm in your phone’s system dialog.</p>
+                    </details>
+                    <details>
+                        <summary><span>Does Pelusa delete photos on its own?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>No. Photos are deleted only after you confirm in the phone’s system dialog. And even then you can restore them for 30 days. On rare Android phones without a trash, deleting is permanent right away. Pelusa tells you about it after deleting.</p>
+                    </details>
+                    <details>
+                        <summary><span>How do I restore deleted photos?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>On Android, right in Pelusa, on the Trash screen. On iPhone, in Recently Deleted in the Photos app, where photos are kept for 30 days.</p>
+                    </details>
+                    <details>
+                        <summary><span>Will a photo be deleted from iCloud or Google Photos?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>iPhone: if iCloud Photos is on, deleting removes the photo from all your devices and from iCloud. This is how iPhone works. After 30 days, the photo is deleted permanently.</p>
+                        <p>Android: Pelusa deletes photos only from the phone. A copy in Google Photos, if there is one, stays.</p>
+                    </details>
+                    <details>
+                        <summary><span>Do I need an internet connection?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>No, Pelusa works offline. Try it in airplane mode. The network is only used for crash reports and stats (you can turn them off in Settings) and for support purchases. On iPhone with iCloud Photos, the system may download a photo from iCloud when you open it full screen.</p>
+                    </details>
+                    <details>
+                        <summary><span>Will Pelusa find duplicates and bad photos for me?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>No, and that’s on purpose. No AI decides for you what matters. You just scroll, remember and drop what you don’t need into a container.</p>
+                    </details>
+                    <details>
+                        <summary><span>What do the containers mean?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>Whatever you like. Containers have no labels: screenshots go in the jar, receipts in the box, “I’ll sort it later” in the bucket. Each one sounds different, so they’re easy to tell apart.</p>
+                    </details>
+                    <details>
+                        <summary><span>Why is it free?</span><svg class="ic ic-plus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#add"></use></svg><svg class="ic ic-minus" aria-hidden="true" focusable="false"><use href="/images/icons.svg#remove"></use></svg></summary>
+                        <p>I made Pelusa for my family, and I’d like it to help others too. There are no ads or subscriptions. If you’d like to say thanks, you can support the author in Settings.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="download">
+            <div class="final">
+                <img class="final-icon" src="/images/icons/icon-512.webp" alt="" width="170" height="170" loading="lazy">
+                <h2>A minute with old photos, and more space on your phone</h2>
+                    <div class="stores stores-final">
+<a class="badge badge-ios" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#apple"></use></svg><span class="badge-text"><small>Download on the</small><b>App Store</b></span></a>
+<a class="badge badge-gp" href="/get/"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#google-play"></use></svg><span class="badge-text"><small>GET IT ON</small><b>Google Play</b></span></a><div class="qr"><img src="/images/qr-get.svg" alt="QR code: pelusa.app/get" width="50" height="50" loading="lazy"><span>Scan with your phone’s camera to open the right store</span></div><div class="trademarks"><span class="only-not-ios">Google Play and the Google Play logo are trademarks of Google LLC.</span><span class="only-not-android">Apple, the Apple logo and App Store are trademarks of Apple Inc.</span></div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="legal-info">
+                <span class="footer-logo">Pelusa</span>
+                <div class="socials socials-footer"><a href="https://www.instagram.com/sorlovfit/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#instagram"></use></svg></a><a href="https://www.tiktok.com/@sorlovfit" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#tiktok"></use></svg></a><a href="https://www.youtube.com/@sorlovfit" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg class="ic ico" aria-hidden="true" focusable="false"><use href="/images/icons.svg#youtube"></use></svg></a></div>
+                <span class="legal-name">OSV Labs</span>
+                <span>Operated by ORLOV, SERGEI</span>
+                <span>Avenida Santa Fe 3681, Piso 16, Departamento G, C1425BGL, Ciudad Autonoma de Buenos Aires, Argentina</span>
+                <span>CUIT: 20-96481946-8</span>
+                <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a>
+                <a href="tel:+5491176039734">+54 9 11 7603-9734</a>
+            </div>
+            <nav class="footer-links" aria-label="Site pages">
+                <a href="/">Home</a>
+                <a href="/contact/">Contact</a>
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/app-privacy/">App Privacy Policy</a>
+                <a href="/terms/">Terms of Use</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Pelusa. All rights reserved.</p>
+            <details class="lang-menu lang-menu-up">
+                <summary aria-label="Language: English"><svg class="ic" aria-hidden="true" focusable="false"><use href="/images/icons.svg#language"></use></svg><span>EN</span><svg class="ic ic-caret" aria-hidden="true" focusable="false"><use href="/images/icons.svg#expand_more"></use></svg></summary>
+                <ul><li><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="page">English</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es">Español (España)</a></li><li><a href="/es-419/" hreflang="es-419" lang="es-419" data-lang="es-419">Español (Latinoamérica)</a></li><li><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/fr-ca/" hreflang="fr-CA" lang="fr-CA" data-lang="fr-CA">Français (Canada)</a></li><li><a href="/it/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT" data-lang="pt-PT">Português (Portugal)</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li></ul>
+            </details>
+        </div>
+    </footer>
+    <script type="application/json" id="page-data">{"lang":"en","mb":"MB","snd_on":"Turn off sound","snd_off":"Turn on sound","home":"/","iosPt":"","offers":{"es":{"text":"El sitio está disponible en español","go":"Abrir","close":"Cerrar","url":"/es/"},"es-419":{"text":"El sitio está disponible en español","go":"Abrir","close":"Cerrar","url":"/es-419/"},"ru":{"text":"Сайт есть на русском","go":"Открыть","close":"Закрыть","url":"/ru/"},"de":{"text":"Diese Website gibt es auch auf Deutsch","go":"Öffnen","close":"Schließen","url":"/de/"},"fr":{"text":"Le site est disponible en français","go":"Ouvrir","close":"Fermer","url":"/fr/"},"fr-CA":{"text":"Le site est disponible en français","go":"Ouvrir","close":"Fermer","url":"/fr-ca/"},"it":{"text":"Il sito è disponibile in italiano","go":"Apri","close":"Chiudi","url":"/it/"},"pt-BR":{"text":"O site está disponível em português","go":"Abrir","close":"Fechar","url":"/pt-br/"},"pt-PT":{"text":"O site está disponível em português","go":"Abrir","close":"Fechar","url":"/pt-pt/"},"ja":{"text":"このサイトは日本語でもご覧いただけます","go":"開く","close":"閉じる","url":"/ja/"}}}</script>
+    <script src="/script.js?v=2.4"></script>
+</body>
+</html>

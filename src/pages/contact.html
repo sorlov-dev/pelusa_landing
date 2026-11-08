@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{{lang}}}">
+<head>
+{{>head}}
+</head>
+<body class="plat-desktop">
+{{>header}}
+
+    <main class="legal-main" id="main">
+        <section class="legal-header">
+            <h1>{{contact_title}}</h1>
+            <p class="page-lead">{{contact_lead}}</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-card">
+                <p class="contact-label">{{legal_email}}</p>
+                <p class="contact-email"><a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a></p>
+                <p class="contact-note">{{contact_response}}</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>{{contact_what_title}}</h2>
+            <div class="reason-grid">
+                <div class="reason-card">
+                    <h3>{{contact_support_h}}</h3>
+                    <p>{{contact_support_p}}</p>
+                </div>
+                <div class="reason-card">
+                    <h3>{{contact_business_h}}</h3>
+                    <p>{{contact_business_p}}</p>
+                </div>
+                <div class="reason-card">
+                    <h3>{{contact_press_h}}</h3>
+                    <p>{{contact_press_p}}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>{{contact_details_title}}</h2>
+            <div class="contact-card legal-info">
+                <span class="legal-name">OSV Labs</span>
+                <span>{{legal_operated}} ORLOV, SERGEI</span>
+                <span>Avenida Santa Fe 3681, Piso 16, Departamento G, C1425BGL, Ciudad Autonoma de Buenos Aires, Argentina</span>
+                <span>CUIT: 20-96481946-8</span>
+                <span>{{legal_email}}: <a href="mailto:contact@orlovs.dev">contact@orlovs.dev</a></span>
+                <span>{{legal_phone}}: <a href="tel:+5491176039734">+54 9 11 7603-9734</a></span>
+            </div>
+        </section>
+    </main>
+
+{{>footer}}
+{{{page_data}}}
+    <script src="/script.js?v={{{version}}}"></script>
+</body>
+</html>

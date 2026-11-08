@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{{lang}}}">
+<head>
+{{>head}}
+</head>
+<body class="plat-desktop">
+{{>header}}
+
+    <main class="legal-main" id="main">
+        <section class="legal-header">
+            <h1>{{{doc_title}}}</h1>
+            <p class="legal-meta">{{last_updated}}: {{{updated}}}</p>
+        </section>
+
+        <article class="legal-doc">
+{{{doc}}}
+        </article>
+    </main>
+
+{{>footer}}
+{{{page_data}}}
+    <script src="/script.js?v={{{version}}}"></script>
+</body>
+</html>
