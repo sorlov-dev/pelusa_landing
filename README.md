@@ -33,7 +33,7 @@ python3 -m http.server 8766
 
 ## Сторы
 
-Пока `stores.ios` и `stores.android` пустые, кнопки сторов ведут на `/get/`, где написано «Скоро в App Store и Google Play», и `/get` никуда не уводит. QR виден только на компьютере. Когда ссылки появятся – вписать их в `src/config.json` и пересобрать.
+Ссылки на сторы – `stores.ios` и `stores.android` в `src/config.json`, после правки пересобрать. QR (виден только на компьютере) ведет на `/get/`: телефон сразу уходит в свой стор, компьютер видит кнопки. Пока ссылки для стора нет, его кнопка на сайте ведет на `/get/`, а телефон этой платформы видит там «Pelusa скоро в App Store» (или «…в App Store и Google Play», если ссылок нет совсем).
 
 Метка источника: `pelusa.app/?src=yt-ru-01` или `pelusa.app/get/?src=…` – уходит в ссылку стора (`referrer` для Google Play, `ct` для App Store при заданном `iosProviderToken`).
 

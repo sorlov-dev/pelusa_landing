@@ -116,6 +116,13 @@ if (getTitle && PAGE.texts) {
     if (home) { home.textContent = tx.home; home.href = tx.homeUrl; }
     const target = PAGE.stores && PAGE.stores[platform];
     if (PAGE.mode === 'stores' && target) location.replace(withSrc(target, platform, SRC || 'qr'));
+    else if (PAGE.mode === 'stores' && platform !== 'desktop') {
+        // В сторе этой платформы приложения еще нет: «скоро» вместо кнопок
+        getTitle.textContent = platform === 'ios' ? tx.soonIos : tx.soon;
+        const stores = document.getElementById('getStores');
+        if (stores) stores.hidden = true;
+        if (sub) sub.hidden = false;
+    }
 }
 
 // --- Звук и отдача ---

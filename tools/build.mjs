@@ -97,7 +97,9 @@ function storeLinks(loc, place) {
             + '<span class="only-not-android">Apple, the Apple logo and App Store are trademarks of Apple Inc.</span>'
             + '</div>';
     }
-    return badges.join('\n') + qr + tm;
+    // На самой /get/ значок без ссылки вел бы на эту же страницу – не показываем его
+    const shown = place === 'get' ? badges.filter((b, i) => [ios, android][i]) : badges;
+    return shown.join('\n') + qr + tm;
 }
 
 function storesBlock(loc, place) {
@@ -313,6 +315,9 @@ for (const loc of LOCALES) {
     const soon = !cfg.stores.ios && !cfg.stores.android;
     const texts = Object.fromEntries(LOCALES.map(l => [l.code, {
         title: DICT[l.code][soon ? 'get_title_soon' : 'get_title'],
+        // Приложение есть только в одном сторе: телефону другой платформы – «скоро», без кнопок
+        soon: DICT[l.code].get_title_soon,
+        soonIos: DICT[l.code].get_title_soon_ios || DICT[l.code].get_title_soon,
         sub: DICT[l.code].soon_p,
         home: DICT[l.code].nav_home_long,
         homeUrl: l.path
@@ -326,7 +331,7 @@ for (const loc of LOCALES) {
     };
     const block = () => soon
         ? `        <p class="get-sub" id="getSub">${esc(DICT.en.soon_p)}</p>`
-        : `        <div class="stores stores-final">\n${storeLinks(loc, 'get')}\n        </div>`;
+        : `        <p class="get-sub" id="getSub" hidden>${esc(DICT.en.soon_p)}</p>\n        <div class="stores stores-final" id="getStores">\n${storeLinks(loc, 'get')}\n        </div>`;
     write('get/index.html', render('get', { loc, vars, storesBlock: block }));
     generated.push('get/index.html');
 }
