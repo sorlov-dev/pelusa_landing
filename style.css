@@ -169,7 +169,7 @@ p { margin: 0; }
 .badge-text b { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; }
 .qr { display: none; align-items: center; gap: 14px; }
 /* Белая карточка – она же тихая зона вокруг кода; 25 модулей по 2 px */
-.qr img { box-sizing: content-box; width: 50px; height: 50px; padding: 12px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
+.qr img { box-sizing: content-box; width: 58px; height: 58px; padding: 12px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
 .qr span { font-size: 13px; line-height: 1.4; color: var(--ink-3); max-width: 160px; text-align: left; }
 
 /* Что видит посетитель: iPhone – только App Store, Android – только Google Play, компьютер – оба + QR */

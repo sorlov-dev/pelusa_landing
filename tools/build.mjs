@@ -89,7 +89,7 @@ function storeLinks(loc, place) {
         `<a class="badge badge-gp"${attrs('android', android)}>${ico('google-play', 'ico')}<span class="badge-text">${text(t.gp_small, 'Google Play')}</span></a>`
     ];
     let qr = '';
-    if (place !== 'get') qr = `<div class="qr"><img src="/images/qr-get.svg" alt="${esc(t.qr_alt)}" width="50" height="50"${place === 'final' ? ' loading="lazy"' : ''}><span>${esc(t.qr)}</span></div>`;
+    if (place !== 'get') qr = `<div class="qr"><img src="/images/qr-get.svg" alt="${esc(t.qr_alt)}" width="58" height="58"${place === 'final' ? ' loading="lazy"' : ''}><span>${esc(t.qr)}</span></div>`;
     let tm = '';
     if (place !== 'hero') {
         tm = '<div class="trademarks">'
